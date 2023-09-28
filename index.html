@@ -17,13 +17,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- nav -->
     <div id="nav">
-      <!-- nav part 1 -->
-      <div class="nav_part_1">
+      <div id="nav-part1">
         <svg
           id="twogood"
           width="106"
@@ -117,20 +116,98 @@
           ></path>
         </svg>
       </div>
-      <!-- nav part 2 -->
-      <div id="nav_part_2">
+      <div id="nav-part2">
         <div id="links">
           <a href="#">Shop</a>
           <a href="#">Catering</a>
           <a href="#">Donate</a>
         </div>
-
         <div id="icons">
           <i class="ri-menu-fill"></i>
           <i class="ri-shopping-cart-2-line"></i>
         </div>
       </div>
     </div>
-    <script src="/index.js"></script>
+    <div id="cursor"></div>
+    <div id="main">
+      <div id="page1">
+        <h1>Change</h1>
+        <h1>the course</h1>
+        <div id="video-container">
+          <div id="play">PLAY</div>
+          <video autoplay loop muted src="./video.mp4"></video>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="elem1" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/ee1c2e8894a4c47c4f4ce71b8973589f8a5045b2-902x1500.png/Rectangle%203.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+            alt=""
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+        <div id="elem2" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/bb84b7106e978c37f5aa92c8d5781751b2e9d9f2-900x1500.png/Rectangle%202.png?w=640&h=1067&auto=format"
+            alt=""
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+        <div id="elem3" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+            alt=""
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+      </div>
+      <div id="page3">
+        <div class="child" id="child1">
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+            alt=""
+          />
+        </div>
+        <div class="child" id="child2">
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+            alt=""
+          />
+        </div>
+        <div class="child" id="child3">
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+            alt=""
+          />
+        </div>
+        <div class="child" id="child4">
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
